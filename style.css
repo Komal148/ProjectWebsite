@@ -179,7 +179,7 @@ footer hr {
 
 /* Gallery */
 
-.gallery [class*="grid-2"], .gallery [class*="grid-3"]  {
+.gallery [class*="grid-2"] {
   margin-bottom: 1%;
   margin-top: 1%;
   width: 50%;
