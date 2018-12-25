@@ -5,7 +5,7 @@
 body {
   font: 100% sans-serif;
   margin: 0em;
-  background-color: #fff;
+ /* background-color: #fff;*/
   color: #666;
 }
 h1,h2, h3 {
@@ -33,6 +33,22 @@ img {
   max-width: 100%;
 }
 
+/*....Images....*/
+#logo
+{
+  float:left;
+  margin-top:15px;;
+  margin-left:20px;
+  width:35px;
+  height:30px;
+  border-radius: 50%;
+
+}
+#profile{
+  margin-top: 230px;
+  border-radius: 50%;
+}
+
 hr {
   border-top: 1px solid #ccc;
   border-bottom: none;
@@ -40,8 +56,9 @@ hr {
   margin-bottom: 2em;
 }
 
+/*..............Header.........*/
 header {
-  background-color:gray;
+  background-color:#CDC9C9	;
   background-image: url(img/blue2.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -50,35 +67,33 @@ header {
   background-size: cover;
   margin-bottom: 4em;
   text-align: center;
-  height: 500px;
+  height: 550px;
   background-size: 100% 340px;
  
 }
-header img {
-  margin-top: 230px;
-  border-radius: 50%;
-}
+
+
+
 header h1 {
   padding-top: 20px;
-  color: white;
+  color: #333;
   font-size: 2em;
   margin: 0;
   letter-spacing: 1px;
   opacity: .9;
-  text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
+  /*text-shadow: 0 3px 0 rgba(0,0,0, 0.5);*/
   top: 370px;
   font-weight: 700;
 }
 
 header p {
-  color: #fff;
+  color: #333;
   font-size: 1.1em;
   padding-bottom: 1.3em;
   padding-top: .5em;
   opacity: .8;
   top: 360px;
 }
-
 
 
 section h1 {
@@ -92,6 +107,9 @@ section ul li{
   margin-left: -10px;
   line-height: 1.8;
 }
+
+
+/*..............Footer ......*/
 
 footer {
   margin-bottom: 1em;
@@ -159,7 +177,6 @@ footer hr {
 .row {
   *zoom: 1;
 }
-
 .grid-2,
 .grid-4 {
   float: left;
@@ -170,39 +187,12 @@ footer hr {
 }
 
 @media screen and (min-width: 40em) {
-  .grid-2 { width: 33.3333333%; }
   .grid-4 { width: 66.6666666%; }
+  .grid-2 { width: 33.3333333%; }
 
 }
 
-/* -------------------Custom Blocks----------------- */
-
-/* Gallery */
-
-.gallery [class*="grid-2"] {
-  margin-bottom: 1%;
-  margin-top: 1%;
-  width: 50%;
-}
-
-.gallery a img {
-  -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
-  transition: opacity .2s ease;
-  opacity: 1;
-}
-
-.gallery a img:hover {
-  opacity: .8;
-}
-
-@media screen and (min-width: 40em) {
-  .gallery .grid-2 {
-    width: 33.3333333%;
-  }
-}
-
-
-/* Experience */
+/*........ Experience.......... */
 .experience [class*="row"] {
   border-bottom: dotted 1px #ccc;
   padding-top: 1em;
@@ -228,7 +218,7 @@ footer hr {
 }
 
 
-/* Education Block */
+/*........ Education Block..........*/
 .education {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
@@ -243,7 +233,7 @@ footer hr {
   }
 }
 
-/* Spotlight */
+/*....... Spotlight........ */
 .spotlight {
   background-color: #f3e2d8;
   padding: 3em 1em;
@@ -253,7 +243,6 @@ footer hr {
 
 
 .spotlight h1 {
-  /*position: absolute;*/
   margin-top:0px;
   margin-bottom:35px;
   text-align: center;
@@ -276,6 +265,9 @@ footer hr {
   color:#21262d;
 }
 
+
+/*...........Declaration.........*/ 
+
 .Declaration h1{
   text-align: center;
 }
@@ -289,4 +281,63 @@ footer hr {
   margin-bottom: -20px;
 }
 
+/*....Navigation Bar...*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:60px;
+}
 
+.navbar p
+{
+ font-family: cursive;
+ font-size: 20px;
+ float:left;
+ color: #f2f2f2;
+ padding-left: 11px ;
+ padding-top:14px;
+ margin-left:5px;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+@media screen and (min-width: 50em) {
+  .navbar{
+      height:60px;
+  }
+
+}
+
+/*...............Flex......*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container > p {
+  background-color:#512a41;;
+  width: 225px;
+  height: 150px;
+  margin: 10px;
+  color: wheat;
+  text-align: center;
+  line-height: 130px;
+  font-size: 30px;
+}

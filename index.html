@@ -4,20 +4,26 @@
 	<meta charset="utf-8" />
 	<title>Komal</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<!-- Small Icon-->
 	<link rel="shortcut icon" href="img/KR.png">
 
 </head>
 
 <body>
-	
 	<!-- Header-->
 	<header>
-		<img src="img/profile.jpg" alt="hello"/>
+		 <!---nav-bar-->
+		 <div class="navbar"> 
+				   <img id="logo" src="img/KR.png" alt=resume/>
+				   <p>Resume</p>
+					<a href="http://www.truecaller.com" target="_blank"><i class="fa fa-phone"></i></a>
+					<a href="http://www.mail.com" target="_blank"><i class="fa fa-envelope"></i></a> 
+		</div> 
+		<img id="profile" src="img/profile.jpg" alt="hello"/>
 		<h1>KOMAL RANI</h1>
 		<p>Designer and Developer</p>
-
 	</header>
 	
 	<div class="container">
@@ -43,23 +49,16 @@
 				</section>
 		</div>
 		<hr>
-
 		<!-- Technical Skills-->
-		<section class="gallery">
-			<h1 class="Objective">Technical Skills</h1>
-			<div class="row">
-				<a href="#"><img src="img/C.png" class="grid-2" alt="C/c++"></a>
-				<a href="#"><img src="img/HTML.png" class="grid-2" alt="HTML"></a>
-				<a href="#"><img src="img/Java.png" class="grid-2" alt="Java"></a>
-				<a href="#"><img src="img/Android.png" class="grid-2" alt="ANdroid"></a>
-				<a href="#"><img src="img/Mysql.png" class="grid-2" alt="Mysql"></a>
-				<a href="#"><img src="img/DS.png" class="grid-2" alt="DS"></a>
-			</div>
-		</section>
-	</div>
-	<!-- New container-->
-	
-	<div class="container">
+		<div class="flex-container">
+				<p>C/C++</p>
+				<p>CSS/HTML</p>
+				<p>Android</p>  
+				<p>Java</p>
+				<p>Mysql</p>
+				<p>DS</p>
+		</div>
+	  <div class="container">
 		<hr>
 		<section class="spotlight">
 			<h1>Projects</h1>
